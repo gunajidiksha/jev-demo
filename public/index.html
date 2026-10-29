@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jev AI - Ad Budget Decision Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Jev AI Decision Dashboard</h1>
+            <p class="subtitle">Intelligent Ad Budget Optimization with Real-Time Act-vs-Review Policy</p>
+            
+            <!-- Upload Section -->
+            <div class="upload-section">
+                <h3>📤 Upload Custom Data</h3>
+                <div class="upload-controls">
+                    <div class="file-input-wrapper">
+                        <label for="adsets-file">Ad Sets JSON:</label>
+                        <input type="file" id="adsets-file" accept=".json" />
+                    </div>
+                    <div class="file-input-wrapper">
+                        <label for="events-file">Events JSON (optional):</label>
+                        <input type="file" id="events-file" accept=".json" />
+                    </div>
+                    <button id="analyze-btn" class="analyze-btn">🚀 Analyze</button>
+                </div>
+                <div id="upload-status" class="upload-status"></div>
+            </div>
+        </header>
+
+        <!-- Policy Info -->
+        <section class="policy-banner">
+            <h3>📋 Act-vs-Review Policy</h3>
+            <p id="policy-note"></p>
+        </section>
+
+        <!-- Stats Overview -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="total-ads">0</div>
+                <div class="stat-label">Total Ad Sets</div>
+            </div>
+            <div class="stat-card stat-success">
+                <div class="stat-value" id="auto-applied">0</div>
+                <div class="stat-label">Auto-Applied</div>
+            </div>
+            <div class="stat-card stat-warning">
+                <div class="stat-value" id="review-needed">0</div>
+                <div class="stat-label">Review Needed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avg-confidence">0%</div>
+                <div class="stat-label">Avg Confidence</div>
+            </div>
+        </section>
+
+        <!-- Decision Cards -->
+        <section class="decisions-section">
+            <h2>🤖 AI Decisions & Final Outcomes</h2>
+            <div id="decisions-container" class="decisions-grid"></div>
+        </section>
+
+        <!-- Events -->
+        <section class="events-section">
+            <h2>⚠️ Active Events</h2>
+            <div id="events-container" class="events-list"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <button id="download-btn" class="download-btn" style="display:none;">
+                📥 Download output.json
+            </button>
+            <p>Mock Jev Service | Demo for Niti Assignment</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

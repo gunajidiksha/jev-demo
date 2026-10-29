@@ -1,0 +1,55 @@
+{
+  "decision_plan": {
+    "ad_set_actions": [
+      {
+        "ad_set_id": "AS-01",
+        "action": "scale",
+        "probability": 0.88,
+        "confidence": 0.88,
+        "reason": "Excellent ROAS 4.2x, strong CTR 2.8%. Proven winner, scale budget to maximize returns. Monitor creative fatigue.",
+        "act_or_review": "act"
+      },
+      {
+        "ad_set_id": "AS-02",
+        "action": "hold",
+        "probability": 0.88,
+        "confidence": 0.88,
+        "reason": "Solid ROAS 3.1x, CTR 2.1%. Profitable and stable, maintain current budget.",
+        "act_or_review": "act"
+      },
+      {
+        "ad_set_id": "AS-03",
+        "action": "pause",
+        "probability": 0.95,
+        "confidence": 0.95,
+        "reason": "Critical: opt-out spike detected. Low ROAS 0.6x, CTR 0.5%. Pause to prevent brand damage.",
+        "act_or_review": "act"
+      },
+      {
+        "ad_set_id": "AS-04",
+        "action": "hold",
+        "probability": 0.78,
+        "confidence": 0.78,
+        "reason": "Only 2 days running. Insufficient data for confident decision. ROAS 2.9x looks promising but needs more time.",
+        "act_or_review": "review"
+      },
+      {
+        "ad_set_id": "AS-05",
+        "action": "hold",
+        "probability": 0.72,
+        "confidence": 0.72,
+        "reason": "Borderline ROAS 1.1x with bounce rate concerns. Hold and monitor before scaling.",
+        "act_or_review": "review"
+      },
+      {
+        "ad_set_id": "AS-06",
+        "action": "hold",
+        "probability": 0.88,
+        "confidence": 0.88,
+        "reason": "Solid ROAS 2.2x, CTR 1.6%. Profitable and stable, maintain current budget.",
+        "act_or_review": "act"
+      }
+    ],
+    "policy_note": "Act-vs-Review Policy: Decisions are auto-applied only when Jev's calibrated probability is ≥ 0.85 (85% confidence) AND the ad set has ≥ 5 days of running data. This threshold balances automation efficiency with risk mitigation. Lower confidence decisions or campaigns with insufficient data are flagged for human review to prevent costly mistakes on immature or uncertain campaigns. Calibrated probabilities from Jev reflect the model's uncertainty and are used as a trust signal for automation safety."
+  }
+}

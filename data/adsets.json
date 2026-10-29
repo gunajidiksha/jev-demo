@@ -1,0 +1,62 @@
+[
+  {
+    "ad_set_id": "AS-01",
+    "name": "Festive Hero",
+    "daily_budget_inr": 8000,
+    "spend_inr_14d": 106000,
+    "revenue_inr_14d": 445000,
+    "roas_14d": 4.2,
+    "ctr_pct": 2.8,
+    "days_running": 21
+  },
+  {
+    "ad_set_id": "AS-02",
+    "name": "Retargeting Core",
+    "daily_budget_inr": 5000,
+    "spend_inr_14d": 68000,
+    "revenue_inr_14d": 211000,
+    "roas_14d": 3.1,
+    "ctr_pct": 2.1,
+    "days_running": 34
+  },
+  {
+    "ad_set_id": "AS-03",
+    "name": "Broad Prospecting",
+    "daily_budget_inr": 6000,
+    "spend_inr_14d": 81000,
+    "revenue_inr_14d": 48600,
+    "roas_14d": 0.6,
+    "ctr_pct": 0.5,
+    "days_running": 14
+  },
+  {
+    "ad_set_id": "AS-04",
+    "name": "Lookalike Test",
+    "daily_budget_inr": 3000,
+    "spend_inr_14d": 5400,
+    "revenue_inr_14d": 15700,
+    "roas_14d": 2.9,
+    "ctr_pct": 1.9,
+    "days_running": 2
+  },
+  {
+    "ad_set_id": "AS-05",
+    "name": "Winback Lapsed",
+    "daily_budget_inr": 4000,
+    "spend_inr_14d": 47000,
+    "revenue_inr_14d": 51700,
+    "roas_14d": 1.1,
+    "ctr_pct": 0.9,
+    "days_running": 12
+  },
+  {
+    "ad_set_id": "AS-06",
+    "name": "Clearance Push",
+    "daily_budget_inr": 3500,
+    "spend_inr_14d": 26000,
+    "revenue_inr_14d": 57200,
+    "roas_14d": 2.2,
+    "ctr_pct": 1.6,
+    "days_running": 8
+  }
+]

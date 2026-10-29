@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "required": [
+    "decision_plan"
+  ],
+  "properties": {
+    "decision_plan": {
+      "type": "object",
+      "required": [
+        "ad_set_actions"
+      ],
+      "properties": {
+        "ad_set_actions": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "required": [
+              "ad_set_id",
+              "action",
+              "probability",
+              "act_or_review",
+              "reason"
+            ],
+            "properties": {
+              "ad_set_id": {
+                "type": "string"
+              },
+              "action": {
+                "enum": [
+                  "pause",
+                  "scale",
+                  "hold"
+                ]
+              },
+              "probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "act_or_review": {
+                "enum": [
+                  "act",
+                  "review"
+                ]
+              },
+              "reason": {
+                "type": "string",
+                "maxLength": 280
+              }
+            }
+          }
+        },
+        "policy_note": {
+          "type": "string",
+          "maxLength": 600
+        }
+      }
+    }
+  }
+}

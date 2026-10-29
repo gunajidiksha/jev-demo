@@ -1,0 +1,20 @@
+[
+  {
+    "event_id": "ev1",
+    "ad_set_id": "AS-03",
+    "type": "opt_out_spike",
+    "detail": "Opt-outs 3x baseline over the last 5 days."
+  },
+  {
+    "event_id": "ev2",
+    "ad_set_id": "AS-05",
+    "type": "bounce_rise",
+    "detail": "Bounce rate rose from 1.2% to 4.6% over the last week."
+  },
+  {
+    "event_id": "ev3",
+    "ad_set_id": "AS-01",
+    "type": "creative_fatigue_watch",
+    "detail": "Frequency approaching 4; monitor but no action required."
+  }
+]

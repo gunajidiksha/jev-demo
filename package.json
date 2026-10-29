@@ -1,0 +1,27 @@
+{
+  "name": "jev-ad-budget-demo",
+  "version": "1.0.0",
+  "description": "Productionized Jev AI for ad budget decisions with act-vs-review policy",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && echo '✓ Build successful'",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "cli": "node dist/cli.js",
+    "server": "npm run build && node dist/server.js",
+    "start": "npm run build && npm run cli"
+  },
+  "keywords": ["jev", "ai", "ad-budget", "decision-engine"],
+  "author": "Diksha",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.4"
+  },
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "@vercel/node": "^3.0.0"
+  }
+}

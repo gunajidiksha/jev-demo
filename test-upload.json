@@ -1,0 +1,26 @@
+[
+  {
+    "ad_set_id": "TEST-01",
+    "name": "Black Friday Campaign",
+    "daily_budget_inr": 10000,
+    "roas_14d": 5.2,
+    "ctr_pct": 3.5,
+    "days_running": 15
+  },
+  {
+    "ad_set_id": "TEST-02",
+    "name": "Summer Sale",
+    "daily_budget_inr": 7500,
+    "roas_14d": 2.8,
+    "ctr_pct": 2.0,
+    "days_running": 8
+  },
+  {
+    "ad_set_id": "TEST-03",
+    "name": "New Product Launch",
+    "daily_budget_inr": 12000,
+    "roas_14d": 0.8,
+    "ctr_pct": 0.6,
+    "days_running": 3
+  }
+]
