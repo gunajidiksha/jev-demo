@@ -2,8 +2,13 @@
   "buildCommand": "npm run build",
   "outputDirectory": "public",
   "framework": null,
+  "functions": {
+    "api/analyze.ts": {
+      "runtime": "@vercel/node@3.0.0"
+    }
+  },
   "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }
-
