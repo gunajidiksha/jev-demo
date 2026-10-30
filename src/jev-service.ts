@@ -100,7 +100,6 @@ export class JevService {
       ad_set_id,
       action,
       probability,
-      confidence: probability, // Jev uses calibrated probabilities as confidence
       reason
     };
   }
